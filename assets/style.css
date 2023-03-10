@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(252, 203, 158)
+}
+
+.title,
+.additional-text,
+#start-btn {
+    display: block;
+    align-items: center;
+    align-content: center;
+}
+
+#coldOpen {
+    margin-top: 50%;
+    margin-left: 30%;
+}
+
+#start-btn{
+    align-items: center;
+}
