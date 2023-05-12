@@ -1,20 +1,183 @@
+@font-face {
+    font-family: flynn;
+    src: url(./fonts/FlynnHollow-0r5d.ttf)
+}
+
+@font-face {
+    font-family: retroTron;
+    src: url(./fonts/retro-tron.ttf)
+
+}
+
+@font-face {
+    font-family: gameCube;
+    src: url(./fonts/GameCube.ttf);
+}
+
 body {
-    background-color: rgb(252, 203, 158)
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
 }
 
 .title,
 .additional-text,
-#start-btn {
-    display: block;
+#start-btn,
+#coldOpen,
+#gameOver  {
+    font-weight: 400;
+    font-family: flynn;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    align-content: center;
+    color: rgb(68, 225, 237);
+}
+
+.additional-text,
+#gameOver {
+    margin-top: 20rem;
+    font-size: 1.337rem;
+}
+
+.title{
+    font-size: 3.575rem;
+    font-stretch: ultra-condensed;
+    font-weight: 150;
+    align-content: flex-start;
+    margin-bottom: 0.775rem;
+    margin-top: 1.775rem;
+    width: 100%;
 }
 
 #coldOpen {
-    margin-top: 50%;
-    margin-left: 30%;
+    padding-bottom: 15rem;
 }
 
-#start-btn{
+#start-btn {
+    border-radius: 16px;
+    border-color: rgb(68, 225, 237);
+    background-color: black;
+    font-size: 1.027rem;
+}
+
+#start-btn:hover {
+    border-color:rgb(241, 123, 19);
+    color:rgb(241, 123, 19);
+
+}
+
+.hof {
+    display: flex;
+    margin-bottom: auto;
+    font-size: 0.899rem;
+    color:rgb(68, 225, 237);
+    margin-top: 15rem;
+    font-family: flynn;
+    display: flex;
+    justify-content: center;
+    margin-bottom: auto;
+
+}
+
+.hof:hover {
+    color: rgb(241, 123, 19);
+}
+
+#gameSQ {
+    height: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     align-items: center;
+    padding: 1rem;
+}
+
+#pregunta {
+    color: rgba(68, 225, 237, 0.775);
+    font-family: gameCube;
+}
+
+#choice1,
+#choice2,
+#choice3,
+#choice4,
+#warp {
+    margin: 1.318rem;
+    padding: 0.718rem;
+    border-radius: 16px;
+    background-color: rgb(68, 225, 237);
+}
+
+#choice1:hover,
+#choice2:hover,
+#choice3:hover,
+#choice4:hover,
+#warp:hover {
+    background-color: rgb(241, 123, 19);
+}
+
+#leaderboard,
+#warp {
+    font-family: flynn;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#timer {
+    color:rgb(241, 123, 19);
+}
+
+
+footer {
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: flynn;
+    color: rgb(68, 225, 237);
+}
+
+#champs{
+    font-family: flynn;
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-content: center;
+}
+
+@media only screen and (min-width: 1078px) {
+    .title{
+        font-size: 4.447rem;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .title{
+        font-size: 2.775rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 1.730rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    .additional-text,
+    .start-btn,
+    footer,
+    .hof {
+        font-size: 0.725rem;
+    }
+    .additional-text {
+        font-size: 0.805rem;
+}
+}
+
+@media only screen and (max-width: 280px) {
+    .title {
+        font-size: 1rem;
+    }
 }
